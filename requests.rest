@@ -1,0 +1,30 @@
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name":"Gimhana",
+    "email":"gimhanadev@gmail.com",
+    "password":"123456"
+}
+
+###
+
+POST http://localhost:8000/api/account-activation
+Content-Type: application/json
+Accept: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2ltaGFuYSIsImVtYWlsIjoiZ2ltaGFuYWRldkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzQ1NiIsImlhdCI6MTYyODYyNjA4MywiZXhwIjoxNjI4NjI2NjgzfQ.n2qX-DIDDjB2JlCtrhaYYJd_C8Tbx3t_W80dlWnkfUI"
+}
+
+
+###
+
+GET http://localhost:8000/api/user/61174f59fc5c9219b49ea286
+Content-Type: application/json
+Accept: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTE3NGY1OWZjNWM5MjE5YjQ5ZWEyODYiLCJpYXQiOjE2Mjg5MzU4MDIsImV4cCI6MTYyOTU0MDYwMn0.P9QIvn025Sy-tasCa3ylsBRs65K5herbHhh8K0r8G9k"
+}
